@@ -1,18 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="1200" height="24" role="img" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 30" width="1200" height="30" role="img" aria-hidden="true">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#203444" stop-opacity="0"/>
-      <stop offset="0.18" stop-color="#203444"/>
-      <stop offset="0.5" stop-color="#78e7ff"/>
-      <stop offset="0.82" stop-color="#203444"/>
-      <stop offset="1" stop-color="#203444" stop-opacity="0"/>
-    </linearGradient>
-    <style>
-      .glow { animation: glow 3.2s ease-in-out infinite; }
-      @keyframes glow { 0%,100% { opacity:.28 } 50% { opacity:1 } }
-      @media (prefers-reduced-motion: reduce) { .glow { animation:none; opacity:.65 } }
-    </style>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1c2940" stop-opacity="0"/><stop offset=".18" stop-color="#2a3b59"/><stop offset=".43" stop-color="#44dfff"/><stop offset=".57" stop-color="#ff4fd8"/><stop offset=".82" stop-color="#2a3b59"/><stop offset="1" stop-color="#1c2940" stop-opacity="0"/></linearGradient>
+    <filter id="g" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>.beam{stroke-dasharray:52 190;animation:move 3.8s linear infinite}@keyframes move{to{stroke-dashoffset:-242}}@media(prefers-reduced-motion:reduce){.beam{animation:none}}</style>
   </defs>
-  <rect x="0" y="11" width="1200" height="2" fill="url(#g)" opacity=".45"/>
-  <rect class="glow" x="440" y="10" width="320" height="4" rx="2" fill="#78e7ff" opacity=".65"/>
+  <line x1="0" y1="15" x2="1200" y2="15" stroke="url(#line)" stroke-width="2" opacity=".72"/>
+  <line x1="110" y1="15" x2="1090" y2="15" stroke="#67eaff" stroke-width="3" class="beam" filter="url(#g)" opacity=".85"/>
+  <circle cx="600" cy="15" r="4" fill="#ff5bdc" filter="url(#g)"/>
 </svg>
