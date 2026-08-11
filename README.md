@@ -1,28 +1,43 @@
 <div align="center">
-  <img src="./assets/banner.svg" width="100%" alt="Ma Yixing — Digital Twin Robotics Lab">
+  <img src="./assets/banner.svg" width="100%" alt="Ma Yixing — cyberpunk robotics city">
 </div>
 
 <br>
-
-## Lab Note
-
-I'm **Ma Yixing (Jimmy)**, a Computer Science (AI) student at the **University of Nottingham** working across **Embodied AI, Humanoid Robotics, 3D scene generation, and machine learning**.
-
-My current research-engineering focus is the layer between *a generated 3D scene* and *a scene a robot can actually train in*: physical validity, collision geometry, multi-floor connectivity, navigation structure, rendering, large-scale generation, and automated quality evaluation.
-
-
-**Main repositories**
-
-- [Humanoid-Training-Scene-Ready-Generation](https://github.com/JIMMY081105/Humanoid-Training-Scene-Ready-Generation) — automation, scene QA, collision validation, HPC orchestration, rendering and benchmarking.
-- [SceneSmith](https://github.com/JIMMY081105/Scenesmith) — working research fork for scalable indoor scene generation.
-
-## Programming Languages
 
 <div align="center">
   <img src="./assets/languages.svg" width="100%" alt="Programming languages: Java, JavaScript, Python, C, C++, Julia, HTML, CSS, SQL, PHP, Shell and Markdown">
 </div>
 
-> Java · JavaScript · Python · C · C++ · Julia · HTML · CSS · SQL · PHP · Shell · Markdown
+<img src="./assets/divider.svg" width="100%" alt="">
+
+## About
+
+I'm **Ma Yixing (Jimmy)**, a Computer Science (AI) student at the **University of Nottingham** working across **Embodied AI, Humanoid Robotics, 3D scene generation, and machine learning**.
+
+My current research-engineering focus is the layer between *a generated 3D scene* and *a scene a robot can actually train in*: physical validity, collision geometry, multi-floor connectivity, navigation structure, rendering, large-scale generation, and automated quality evaluation.
+
+## Current Research System
+
+### 🤖 Humanoid Training Scene-Ready Generation
+
+My main research project is focused on generating and validating robot-ready indoor environments at scale.
+
+- [Humanoid-Training-Scene-Ready-Generation](https://github.com/JIMMY081105/Humanoid-Training-Scene-Ready-Generation) — automation, scene QA, collision validation, HPC orchestration, rendering and benchmarking.
+- [SceneSmith](https://github.com/JIMMY081105/Scenesmith) — working research fork for scalable indoor scene generation.
+
+```text
+scene generation
+      ↓
+geometry + collision validation
+      ↓
+multi-floor connection
+      ↓
+navigation QA
+      ↓
+simulation-ready export
+```
+
+<img src="./assets/divider.svg" width="100%" alt="">
 
 ## Research Domains
 
@@ -37,7 +52,7 @@ Coordination, planning and intelligent-agent systems.
 
 ## Selected Systems
 
-| System | What I built / study |
+| System | Focus |
 |---|---|
 | [Humanoid Training Scene-Ready Generation](https://github.com/JIMMY081105/Humanoid-Training-Scene-Ready-Generation) | Robotics environments · 3D generation · validation |
 | [SceneSmith](https://github.com/JIMMY081105/Scenesmith) | Indoor scene generation · embodied AI |
@@ -50,7 +65,7 @@ Coordination, planning and intelligent-agent systems.
 
 `PyTorch` · `Blender` · `Linux` · `Git` · `GitHub` · `HPC / SLURM` · `3D geometry pipelines` · `automation`
 
----
+<img src="./assets/divider.svg" width="100%" alt="">
 
 <div align="center">
   <sub><code>BUILDING WORLDS FOR INTELLIGENT MACHINES</code></sub>
