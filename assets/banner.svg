@@ -1,146 +1,172 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-label="Ma Yixing digital twin robotics control room">
-  <title>Ma Yixing / Jimmy — Digital Twin Robotics Lab</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="Ma Yixing cyberpunk robotics city">
+  <title>Ma Yixing / Jimmy — Neon Robotics City</title>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#070A12"/>
-      <stop offset="0.5" stop-color="#0B1020"/>
-      <stop offset="1" stop-color="#0A101A"/>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050711"/>
+      <stop offset="0.52" stop-color="#0a1230"/>
+      <stop offset="1" stop-color="#120923"/>
     </linearGradient>
-    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#7C5CFF" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#7C5CFF" stop-opacity="0"/>
+    <radialGradient id="haze" cx="72%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#46dcff" stop-opacity=".22"/>
+      <stop offset=".48" stop-color="#7b5cff" stop-opacity=".10"/>
+      <stop offset=".72" stop-color="#ff4fd8" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#050711" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="micro" width="18" height="18" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="0.8" fill="#36415A" opacity="0.42"/>
-    </pattern>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="glassA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f365b"/>
+      <stop offset="1" stop-color="#0b1428"/>
+    </linearGradient>
+    <linearGradient id="glassB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#291744"/>
+      <stop offset="1" stop-color="#10142b"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#070c16"/>
+      <stop offset="1" stop-color="#16142b"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34d8ff"/>
+      <stop offset="1" stop-color="#8af6ff"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff3fcf"/>
+      <stop offset="1" stop-color="#ff8bec"/>
+    </linearGradient>
+    <filter id="blueGlow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="pinkGlow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="stars" width="64" height="44" patternUnits="userSpaceOnUse"><circle cx="8" cy="10" r=".7" fill="#b8dfff" opacity=".25"/><circle cx="42" cy="27" r=".6" fill="#ffb0ed" opacity=".18"/></pattern>
     <style>
-      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-      .packet { stroke-dasharray: 3 18; animation: packets 2.5s linear infinite; }
-      .packet2 { stroke-dasharray: 2 22; animation: packets2 3.4s linear infinite; }
-      .node { animation: breathe 2.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-      .node2 { animation: breathe 2.6s ease-in-out infinite .8s; transform-box: fill-box; transform-origin: center; }
-      .bar1 { animation: bar 2.2s ease-in-out infinite; transform-origin: bottom; }
-      .bar2 { animation: bar 2.8s ease-in-out infinite .4s; transform-origin: bottom; }
-      .bar3 { animation: bar 2.4s ease-in-out infinite .9s; transform-origin: bottom; }
-      @keyframes packets { to { stroke-dashoffset: -42; } }
-      @keyframes packets2 { to { stroke-dashoffset: -48; } }
-      @keyframes breathe { 0%,100% { opacity:.45; transform:scale(.85); } 50% { opacity:1; transform:scale(1.15); } }
-      @keyframes bar { 0%,100% { transform:scaleY(.35); } 50% { transform:scaleY(1); } }
-      @media (prefers-reduced-motion: reduce) { .packet,.packet2,.node,.node2,.bar1,.bar2,.bar3 { animation:none; } }
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      .rain line{animation:rain 1.8s linear infinite}.rain line:nth-child(2n){animation-duration:2.3s}.rain line:nth-child(3n){animation-duration:2.9s}
+      .pulse{animation:pulse 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.pulse2{animation:pulse 3.1s ease-in-out infinite .6s;transform-box:fill-box;transform-origin:center}
+      .flicker{animation:flicker 4.1s steps(1,end) infinite}.float{animation:float 4.6s ease-in-out infinite}.float2{animation:float2 5.3s ease-in-out infinite}
+      .laneC{stroke-dasharray:10 14;animation:lane 2.2s linear infinite}.laneP{stroke-dasharray:8 13;animation:lane2 2.8s linear infinite}
+      .windows{animation:windows 4.4s ease-in-out infinite}.parallax{animation:parallax 8s ease-in-out infinite}
+      @keyframes rain{from{transform:translateY(-24px);opacity:.08}to{transform:translateY(38px);opacity:.48}}
+      @keyframes pulse{0%,100%{opacity:.38;transform:scale(.88)}50%{opacity:1;transform:scale(1.12)}}
+      @keyframes flicker{0%,46%,52%,100%{opacity:1}48%{opacity:.35}50%{opacity:.72}}
+      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+      @keyframes float2{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+      @keyframes lane{to{stroke-dashoffset:-48}}@keyframes lane2{to{stroke-dashoffset:-42}}
+      @keyframes windows{0%,100%{opacity:.54}50%{opacity:1}}
+      @keyframes parallax{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+      @media(prefers-reduced-motion:reduce){.rain line,.pulse,.pulse2,.flicker,.float,.float2,.laneC,.laneP,.windows,.parallax{animation:none}}
     </style>
   </defs>
 
-  <rect width="1200" height="430" rx="18" fill="url(#bg)"/>
-  <rect x="0.5" y="0.5" width="1199" height="429" rx="17.5" fill="none" stroke="#20283A"/>
-  <rect width="1200" height="430" rx="18" fill="url(#micro)"/>
+  <rect width="1200" height="420" rx="18" fill="url(#sky)"/>
+  <rect width="1200" height="420" rx="18" fill="url(#stars)"/>
+  <ellipse cx="870" cy="190" rx="390" ry="210" fill="url(#haze)"/>
 
-  <!-- top rail -->
-  <g class="mono">
-    <text x="34" y="34" fill="#68748D" font-size="10" letter-spacing="2.4">DIGITAL TWIN CONTROL ROOM</text>
-    <text x="1166" y="34" fill="#68748D" font-size="10" text-anchor="end" letter-spacing="2">PROFILE_NODE / JIMMY081105</text>
-    <line x1="34" y1="49" x2="1166" y2="49" stroke="#222B3E"/>
+  <!-- atmospheric depth -->
+  <g opacity=".18" class="parallax">
+    <rect x="530" y="205" width="34" height="120" fill="#13213a"/><rect x="575" y="176" width="50" height="149" fill="#101d35"/><rect x="640" y="194" width="38" height="131" fill="#15213b"/>
+    <rect x="691" y="160" width="29" height="165" fill="#111e35"/><rect x="731" y="184" width="41" height="141" fill="#111d34"/>
   </g>
 
-  <!-- left identity module -->
-  <g class="mono">
-    <rect x="34" y="72" width="310" height="314" rx="12" fill="#0A0F1B" stroke="#242E43"/>
-    <rect x="49" y="89" width="70" height="24" rx="12" fill="#151A2A" stroke="#7C5CFF"/>
-    <circle cx="64" cy="101" r="4" fill="#9B8AFF" class="node"/>
-    <text x="77" y="105" fill="#BDB5FF" font-size="10" letter-spacing="1.6">ONLINE</text>
-
-    <text x="51" y="158" fill="#F4F7FF" font-size="34" font-weight="700">MA YIXING</text>
-    <text x="52" y="184" fill="#8490A9" font-size="13" letter-spacing="2.5">JIMMY / CS + AI</text>
-
-    <text x="52" y="229" fill="#6FE7FF" font-size="11" letter-spacing="1.8">FOCUS VECTOR</text>
-    <text x="52" y="255" fill="#D7DDF0" font-size="14">Embodied AI</text>
-    <text x="52" y="278" fill="#D7DDF0" font-size="14">Humanoid Robotics</text>
-    <text x="52" y="301" fill="#D7DDF0" font-size="14">3D Scene Generation</text>
-    <text x="52" y="324" fill="#D7DDF0" font-size="14">Machine Learning</text>
-
-    <line x1="52" y1="345" x2="326" y2="345" stroke="#222B3E"/>
-    <text x="52" y="369" fill="#68748D" font-size="10" letter-spacing="1.4">UNIVERSITY OF NOTTINGHAM</text>
-  </g>
-
-  <!-- center digital twin viewport -->
+  <!-- 3D city blocks -->
   <g>
-    <rect x="366" y="72" width="500" height="314" rx="12" fill="#080D17" stroke="#242E43"/>
-    <ellipse cx="617" cy="225" rx="218" ry="150" fill="url(#halo)"/>
+    <!-- cyan tower -->
+    <polygon points="720,140 780,112 780,300 720,327" fill="#0e1930"/>
+    <polygon points="780,112 813,132 813,318 780,300" fill="#1c2a48"/>
+    <polygon points="720,140 753,160 813,132 780,112" fill="#28446c"/>
+    <path d="M736 161V296 M751 154V289 M768 147V281" stroke="#45dcff" stroke-width="3" opacity=".7" class="windows" filter="url(#blueGlow)"/>
+    <path d="M790 151V293 M801 159V302" stroke="#ff4fd8" stroke-width="2" opacity=".52" class="windows" filter="url(#pinkGlow)"/>
 
-    <!-- floor 02 -->
-    <polygon points="492,125 634,86 769,139 625,180" fill="#151D33" stroke="#7C5CFF" stroke-width="1.6"/>
-    <polygon points="492,125 625,180 625,203 492,148" fill="#0E1526" stroke="#5142A8"/>
-    <polygon points="625,180 769,139 769,162 625,203" fill="#111A2E" stroke="#5142A8"/>
-    <path d="M531 127 L638 99 L731 136 L625 166 Z" fill="none" stroke="#8170E8" stroke-width="1" opacity=".56"/>
-    <path d="M571 116 L571 144 M675 110 L675 151 M615 104 L615 159 M718 126 L718 151" stroke="#5A4DB4" opacity=".62"/>
+    <!-- tall central tower -->
+    <polygon points="804,90 884,53 884,305 804,343" fill="#111b34"/>
+    <polygon points="884,53 930,81 930,328 884,305" fill="#20304f"/>
+    <polygon points="804,90 850,117 930,81 884,53" fill="#2a4772"/>
+    <path d="M827 116V318 M846 107V310 M866 98V301" stroke="#52e8ff" stroke-width="4" opacity=".72" class="windows" filter="url(#blueGlow)"/>
+    <path d="M899 99V300 M913 108V311" stroke="#ff48d1" stroke-width="3" opacity=".62" class="windows" filter="url(#pinkGlow)"/>
+    <line x1="906" y1="67" x2="906" y2="28" stroke="#ff4fd8" stroke-width="2" filter="url(#pinkGlow)"/>
+    <circle cx="906" cy="26" r="3" fill="#ff4fd8" class="pulse" filter="url(#pinkGlow)"/>
 
-    <!-- connector / stairs -->
-    <g fill="none" stroke="#6FE7FF" stroke-width="2">
-      <path d="M621 204 l21 8 l-13 8 l20 8 l-12 8 l19 8 l-12 8 l18 8"/>
-      <path d="M621 204 L662 260" opacity=".25"/>
-    </g>
+    <!-- purple tower -->
+    <polygon points="918,134 981,104 981,307 918,336" fill="#16142f"/>
+    <polygon points="981,104 1017,126 1017,325 981,307" fill="#2a2147"/>
+    <polygon points="918,134 954,154 1017,126 981,104" fill="#4a3268"/>
+    <path d="M938 157V310 M955 149V302" stroke="#ff50d8" stroke-width="3" opacity=".72" class="windows" filter="url(#pinkGlow)"/>
+    <path d="M992 146V303 M1003 154V314" stroke="#54e6ff" stroke-width="2" opacity=".58" class="windows" filter="url(#blueGlow)"/>
 
-    <!-- floor 01 -->
-    <polygon points="470,274 614,230 765,285 616,332" fill="#11212B" stroke="#2EC5E8" stroke-width="1.6"/>
-    <polygon points="470,274 616,332 616,354 470,297" fill="#0C161D" stroke="#247B91"/>
-    <polygon points="616,332 765,285 765,307 616,354" fill="#0D1922" stroke="#247B91"/>
-    <path d="M509 275 L616 243 L728 283 L617 318 Z" fill="none" stroke="#42CDEB" stroke-width="1" opacity=".55"/>
-    <path d="M550 263 L550 303 M658 257 L658 306 M599 248 L599 313 M704 274 L704 304" stroke="#267E95" opacity=".62"/>
-
-    <!-- route through the digital twin -->
-    <path d="M505 290 C555 304 584 300 615 278 C641 260 643 232 626 204 C610 177 624 153 655 140 C683 128 711 137 739 148"
-          fill="none" stroke="#FFB44A" stroke-width="2.6" class="packet" filter="url(#glow)"/>
-    <path d="M505 290 C555 304 584 300 615 278 C641 260 643 232 626 204 C610 177 624 153 655 140 C683 128 711 137 739 148"
-          fill="none" stroke="#FFB44A" stroke-width="1" opacity=".28"/>
-
-    <!-- robot pose marker -->
-    <g transform="translate(576 282)" stroke="#F5F7FF" stroke-width="2.4" stroke-linecap="round" fill="none">
-      <circle cx="0" cy="-14" r="5.5"/>
-      <path d="M0 -8 V9 M0 -2 L-9 6 M0 -2 L9 5 M0 9 L-8 20 M0 9 L8 20"/>
-    </g>
-    <circle cx="576" cy="262" r="3.2" fill="#FFB44A" class="node2" filter="url(#glow)"/>
-
-    <!-- nodes -->
-    <circle cx="505" cy="290" r="5" fill="#6FE7FF" class="node"/>
-    <circle cx="626" cy="204" r="5" fill="#9B8AFF" class="node2"/>
-    <circle cx="739" cy="148" r="5" fill="#FFB44A" class="node"/>
-
-    <g class="mono">
-      <text x="388" y="96" fill="#68748D" font-size="10" letter-spacing="2">SIMULATION VIEWPORT</text>
-      <text x="846" y="96" fill="#68748D" font-size="10" text-anchor="end">2F / CONNECTED</text>
-      <text x="388" y="369" fill="#68748D" font-size="10">WAYPOINT GRAPH</text>
-      <text x="846" y="369" fill="#6FE7FF" font-size="10" text-anchor="end">GEOMETRY VALID</text>
-    </g>
+    <!-- right mega tower -->
+    <polygon points="1010,79 1086,45 1086,303 1010,338" fill="#0e1b33"/>
+    <polygon points="1086,45 1134,73 1134,324 1086,303" fill="#1b2c4c"/>
+    <polygon points="1010,79 1058,107 1134,73 1086,45" fill="#27456f"/>
+    <path d="M1034 106V314 M1053 98V305 M1072 89V296" stroke="#46dfff" stroke-width="4" opacity=".7" class="windows" filter="url(#blueGlow)"/>
+    <path d="M1100 92V303 M1115 101V313" stroke="#ff4bd4" stroke-width="3" opacity=".6" class="windows" filter="url(#pinkGlow)"/>
+    <line x1="1110" y1="61" x2="1110" y2="18" stroke="#47e6ff" stroke-width="2" filter="url(#blueGlow)"/>
+    <circle cx="1110" cy="16" r="3" fill="#47e6ff" class="pulse2" filter="url(#blueGlow)"/>
   </g>
 
-  <!-- right pipeline module -->
+  <!-- elevated transit -->
+  <g>
+    <polygon points="560,286 786,261 1128,316 855,355" fill="url(#road)"/>
+    <polygon points="560,286 855,355 855,370 560,303" fill="#060a13"/>
+    <polygon points="855,355 1128,316 1128,331 855,370" fill="#12162b"/>
+    <path d="M585 291 C715 277 844 278 1105 321" fill="none" stroke="url(#cyan)" stroke-width="3" class="laneC" filter="url(#blueGlow)"/>
+    <path d="M584 301 C730 290 855 294 1107 330" fill="none" stroke="url(#pink)" stroke-width="3" class="laneP" filter="url(#pinkGlow)"/>
+  </g>
+
+  <!-- holographic interfaces -->
+  <g class="float flicker">
+    <polygon points="744,73 826,63 826,112 744,119" fill="#12324b" fill-opacity=".70" stroke="#55e8ff" stroke-width="1.8"/>
+    <circle cx="770" cy="91" r="12" fill="none" stroke="#55e8ff" stroke-width="2"/><circle cx="770" cy="91" r="4" fill="#55e8ff" class="pulse"/>
+    <path d="M792 82H814 M792 91H807 M792 100H817" stroke="#a9f7ff" stroke-width="2" opacity=".75"/>
+  </g>
+  <g class="float2">
+    <polygon points="940,63 1032,73 1032,126 940,116" fill="#3a1237" fill-opacity=".68" stroke="#ff55d8" stroke-width="1.8"/>
+    <path d="M955 87H1014 M955 97H1002 M955 107H1020" stroke="#ff9dea" stroke-width="2" opacity=".78"/>
+    <circle cx="1014" cy="93" r="6" fill="#ff55d8" class="pulse2"/>
+  </g>
+  <g class="float">
+    <polygon points="1083,145 1160,151 1160,230 1083,224" fill="#102b45" fill-opacity=".72" stroke="#50e8ff" stroke-width="1.8"/>
+    <circle cx="1122" cy="183" r="17" fill="none" stroke="#50e8ff" stroke-width="2"/><circle cx="1122" cy="183" r="6" fill="#50e8ff" class="pulse"/>
+    <path d="M1097 211H1145" stroke="#ff53d7" stroke-width="3"/>
+  </g>
+
+  <!-- rooftop foreground -->
+  <polygon points="455,322 820,304 1190,361 784,416 455,390" fill="#080d17"/>
+  <path d="M500 343 C640 337 734 348 875 381" stroke="#48e5ff" stroke-width="5" opacity=".16"/>
+  <path d="M646 333 C770 341 910 361 1050 392" stroke="#ff4fd4" stroke-width="6" opacity=".14"/>
+  <line x1="468" y1="326" x2="701" y2="314" stroke="#3fe1ff" stroke-width="3" opacity=".8" filter="url(#blueGlow)"/>
+  <line x1="920" y1="322" x2="1160" y2="355" stroke="#ff4bd4" stroke-width="3" opacity=".8" filter="url(#pinkGlow)"/>
+
+  <!-- humanoid sentinel -->
+  <g transform="translate(995 293)">
+    <ellipse cx="0" cy="98" rx="48" ry="12" fill="#ff4fd4" opacity=".12" class="pulse2"/>
+    <g fill="#0c1322" stroke="#34415e" stroke-width="2">
+      <path d="M-18 -66 Q0 -81 18 -66 L14 -43 Q0 -34 -14 -43 Z"/>
+      <path d="M-24 -39 L24 -39 L31 20 L0 43 L-31 20 Z"/>
+      <path d="M-28 -18 L-55 17 L-43 25 L-19 -5 Z"/>
+      <path d="M28 -18 L55 17 L43 25 L19 -5 Z"/>
+      <path d="M-11 39 L-28 94 L-10 97 L5 46 Z"/>
+      <path d="M11 39 L28 94 L10 97 L-5 46 Z"/>
+    </g>
+    <rect x="-8" y="-18" width="16" height="26" rx="5" fill="#ff4fd4" class="pulse" filter="url(#pinkGlow)"/>
+    <circle cx="-7" cy="-57" r="3.5" fill="#50e7ff" class="pulse" filter="url(#blueGlow)"/>
+    <circle cx="7" cy="-57" r="3.5" fill="#ff4fd4" class="pulse2" filter="url(#pinkGlow)"/>
+    <path d="M-17 -70L-30 -88 M17 -70L31 -90" stroke="#61789e" stroke-width="2"/>
+  </g>
+
+  <!-- identity block in negative space -->
   <g class="mono">
-    <rect x="888" y="72" width="278" height="314" rx="12" fill="#0A0F1B" stroke="#242E43"/>
-    <text x="909" y="100" fill="#68748D" font-size="10" letter-spacing="2">ACTIVE PIPELINE</text>
-
-    <g font-size="12">
-      <text x="909" y="137" fill="#D9DEEF">01  scene generation</text><text x="1145" y="137" fill="#65E6A3" text-anchor="end">PASS</text>
-      <line x1="909" y1="149" x2="1145" y2="149" stroke="#222B3E"/>
-      <text x="909" y="176" fill="#D9DEEF">02  geometry QA</text><text x="1145" y="176" fill="#65E6A3" text-anchor="end">PASS</text>
-      <line x1="909" y1="188" x2="1145" y2="188" stroke="#222B3E"/>
-      <text x="909" y="215" fill="#D9DEEF">03  floor connection</text><text x="1145" y="215" fill="#FFB44A" text-anchor="end">ACTIVE</text>
-      <line x1="909" y1="227" x2="1145" y2="227" stroke="#222B3E"/>
-      <text x="909" y="254" fill="#D9DEEF">04  navigation QA</text><text x="1145" y="254" fill="#75819B" text-anchor="end">QUEUE</text>
-      <line x1="909" y1="266" x2="1145" y2="266" stroke="#222B3E"/>
-      <text x="909" y="293" fill="#D9DEEF">05  sim export</text><text x="1145" y="293" fill="#75819B" text-anchor="end">QUEUE</text>
-    </g>
-
-    <text x="909" y="330" fill="#68748D" font-size="10" letter-spacing="1.6">COMPUTE SIGNAL</text>
-    <g fill="#7C5CFF">
-      <rect x="910" y="349" width="8" height="20" rx="2" class="bar1"/>
-      <rect x="923" y="340" width="8" height="29" rx="2" class="bar2"/>
-      <rect x="936" y="353" width="8" height="16" rx="2" class="bar3"/>
-      <rect x="949" y="345" width="8" height="24" rx="2" class="bar1"/>
-      <rect x="962" y="337" width="8" height="32" rx="2" class="bar2"/>
-    </g>
-    <text x="1145" y="363" fill="#9B8AFF" font-size="10" text-anchor="end" letter-spacing="1.4">RESEARCH MODE</text>
+    <text x="48" y="54" fill="#73b8d3" font-size="11" letter-spacing="2.8">NEON CITY / ROBOTICS NODE 081105</text>
+    <text x="48" y="119" fill="#f6f8ff" font-size="43" font-weight="700">MA YIXING</text>
+    <text x="49" y="149" fill="#91a6bf" font-size="15" letter-spacing="2.4">JIMMY / COMPUTER SCIENCE + AI</text>
+    <text x="49" y="204" fill="#59e7ff" font-size="15" letter-spacing="2">EMBODIED AI · HUMANOID ROBOTICS</text>
+    <text x="49" y="231" fill="#ff63dc" font-size="15" letter-spacing="2">3D WORLDS · MACHINE LEARNING</text>
+    <text x="49" y="276" fill="#d3dfec" font-size="13">building simulation-ready worlds for intelligent machines</text>
+    <line x1="49" y1="301" x2="418" y2="301" stroke="#2a3850"/>
+    <circle cx="55" cy="328" r="5" fill="#65efb2" class="pulse"/>
+    <text x="69" y="333" fill="#a8f3d3" font-size="11" letter-spacing="1.8">RESEARCH ACTIVE</text>
+    <text x="49" y="365" fill="#778ba5" font-size="10" letter-spacing="1.6">NOTTINGHAM / ROBOTICS / SCENE SYSTEMS</text>
   </g>
+
+  <!-- rain layer -->
+  <g class="rain" stroke="#a6def7" stroke-width="1" opacity=".35">
+    <line x1="26" y1="6" x2="18" y2="32"/><line x1="86" y1="18" x2="78" y2="44"/><line x1="145" y1="2" x2="137" y2="28"/><line x1="218" y1="16" x2="210" y2="42"/><line x1="296" y1="7" x2="288" y2="33"/><line x1="374" y1="21" x2="366" y2="47"/><line x1="448" y1="9" x2="440" y2="35"/><line x1="528" y1="19" x2="520" y2="45"/><line x1="602" y1="4" x2="594" y2="30"/><line x1="678" y1="16" x2="670" y2="42"/><line x1="746" y1="8" x2="738" y2="34"/><line x1="820" y1="24" x2="812" y2="50"/><line x1="894" y1="10" x2="886" y2="36"/><line x1="968" y1="19" x2="960" y2="45"/><line x1="1040" y1="5" x2="1032" y2="31"/><line x1="1112" y1="17" x2="1104" y2="43"/><line x1="1172" y1="7" x2="1164" y2="33"/>
+  </g>
+
+  <rect x=".5" y=".5" width="1199" height="419" rx="17.5" fill="none" stroke="#263553"/>
 </svg>
