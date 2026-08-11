@@ -10,27 +10,6 @@ I'm **Ma Yixing (Jimmy)**, a Computer Science (AI) student at the **University o
 
 My current research-engineering focus is the layer between *a generated 3D scene* and *a scene a robot can actually train in*: physical validity, collision geometry, multi-floor connectivity, navigation structure, rendering, large-scale generation, and automated quality evaluation.
 
-## Current Build
-
-### 🤖 Humanoid Training Scene-Ready Generation
-
-Building a pipeline for scalable robot-training environments:
-
-```text
-SCENE GENERATION
-      │
-      ▼
-GEOMETRY + COLLISION QA
-      │
-      ▼
-MULTI-FLOOR ASSEMBLY
-      │
-      ▼
-NAVIGATION / CONNECTIVITY VALIDATION
-      │
-      ▼
-SIMULATION-READY EXPORT
-```
 
 **Main repositories**
 
