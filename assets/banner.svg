@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Ma Yixing — Embodied AI, Humanoid Robotics and 3D Environments">
+  <title>Ma Yixing / Jimmy — robotics research profile</title>
+  <defs>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#182635" stroke-width="1" opacity="0.52"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#071019"/>
+      <stop offset="0.56" stop-color="#0a1520"/>
+      <stop offset="1" stop-color="#0b1c26"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#78e7ff" stop-opacity="0"/>
+      <stop offset="0.78" stop-color="#78e7ff" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#78e7ff" stop-opacity="0.42"/>
+    </linearGradient>
+    <clipPath id="scene"><rect x="665" y="32" width="490" height="294" rx="8"/></clipPath>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .scan { animation: scan 6.8s linear infinite; }
+      .pulse { animation: pulse 2.3s ease-in-out infinite; }
+      .route { stroke-dasharray: 8 10; animation: route 2.4s linear infinite; }
+      @keyframes scan { from { transform: translateX(-150px); } to { transform: translateX(650px); } }
+      @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .28; } }
+      @keyframes route { to { stroke-dashoffset: -36; } }
+      @media (prefers-reduced-motion: reduce) {
+        .scan,.pulse,.route { animation:none; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" rx="14" fill="url(#fade)"/>
+  <rect x="0.5" y="0.5" width="1199" height="359" rx="13.5" fill="none" stroke="#203444"/>
+  <rect width="1200" height="360" rx="14" fill="url(#grid)" opacity="0.62"/>
+
+  <g class="mono">
+    <text x="52" y="63" fill="#7e9bad" font-size="13" letter-spacing="3.2">PROFILE / 081105</text>
+    <circle cx="235" cy="58" r="5" fill="#66f2b2" class="pulse"/>
+    <text x="249" y="63" fill="#66f2b2" font-size="12" letter-spacing="2">RESEARCH ACTIVE</text>
+
+    <text x="52" y="129" fill="#eef7fb" font-size="42" font-weight="700">MA YIXING</text>
+    <text x="52" y="160" fill="#8aa7b7" font-size="17" letter-spacing="3">JIMMY / COMPUTER SCIENCE + AI</text>
+
+    <text x="52" y="215" fill="#73d9f5" font-size="16" letter-spacing="2.2">EMBODIED AI · HUMANOID ROBOTICS</text>
+    <text x="52" y="244" fill="#73d9f5" font-size="16" letter-spacing="2.2">3D ENVIRONMENTS · MACHINE LEARNING</text>
+
+    <line x1="52" y1="276" x2="570" y2="276" stroke="#203444"/>
+    <text x="52" y="303" fill="#7e9bad" font-size="12" letter-spacing="2">CURRENT SIGNAL</text>
+    <text x="52" y="329" fill="#d5e5ec" font-size="14">simulation-ready worlds for intelligent machines</text>
+  </g>
+
+  <g clip-path="url(#scene)">
+    <rect x="665" y="32" width="490" height="294" fill="#07131c" stroke="#1e3442"/>
+
+    <!-- multi-floor environment -->
+    <g fill="none" stroke="#466779" stroke-width="2">
+      <path d="M702 244 H822 V194 H934 V244 H1115"/>
+      <path d="M702 112 H828 V162 H932 V112 H1115"/>
+      <path d="M702 244 V281 H1115 V244"/>
+      <path d="M702 112 V76 H1115 V112"/>
+      <path d="M734 244 V281 M783 244 V281 M967 244 V281 M1044 244 V281" opacity=".6"/>
+      <path d="M738 76 V112 M808 76 V112 M970 76 V112 M1067 76 V112" opacity=".6"/>
+    </g>
+
+    <!-- staircase -->
+    <g stroke="#78e7ff" stroke-width="2" fill="none" opacity=".82">
+      <path d="M829 194 h16 v-12 h16 v-12 h16 v-12 h16 v-12 h16 v-12 h16 v-12"/>
+      <path d="M829 202 L933 126" opacity=".28"/>
+    </g>
+
+    <!-- navigation path -->
+    <path d="M724 262 C775 257 810 246 842 218 C873 190 888 160 920 142 C959 120 1019 129 1093 94"
+          fill="none" stroke="#66f2b2" stroke-width="3" opacity=".88" class="route"/>
+
+    <!-- humanoid schematic -->
+    <g transform="translate(798 205)" stroke="#eef7fb" stroke-width="3" fill="none" stroke-linecap="round">
+      <circle cx="0" cy="-31" r="9"/>
+      <path d="M0 -22 V10 M0 -10 L-17 4 M0 -10 L17 2 M0 10 L-14 33 M0 10 L15 33"/>
+      <circle cx="0" cy="-31" r="3" fill="#78e7ff" stroke="none" class="pulse"/>
+    </g>
+
+    <!-- sensing nodes -->
+    <g fill="#78e7ff">
+      <circle cx="723" cy="262" r="4"/>
+      <circle cx="920" cy="142" r="4"/>
+      <circle cx="1093" cy="94" r="4"/>
+    </g>
+    <g fill="none" stroke="#78e7ff" opacity=".42" class="pulse">
+      <circle cx="920" cy="142" r="11"/>
+      <circle cx="1093" cy="94" r="11"/>
+    </g>
+
+    <!-- scanner -->
+    <g class="scan">
+      <rect x="638" y="32" width="118" height="294" fill="url(#beam)"/>
+      <line x1="755" y1="32" x2="755" y2="326" stroke="#78e7ff" stroke-width="1.5" opacity=".75"/>
+    </g>
+
+    <g class="mono" fill="#6f8999" font-size="10" letter-spacing="1.4">
+      <text x="686" y="55">FLOOR_02 / VALID</text>
+      <text x="686" y="316">FLOOR_01 / VALID</text>
+      <text x="1000" y="316">PATH / CONNECTED</text>
+    </g>
+  </g>
+</svg>
