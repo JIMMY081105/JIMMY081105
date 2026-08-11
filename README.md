@@ -44,12 +44,10 @@ I work mainly on **Embodied AI, Humanoid Robotics, 3D scene generation, and mach
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="42" height="42" alt="GitHub" />
   </a>
   &nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" width="42" height="42" alt="LinkedIn" title="LinkedIn link pending" />
-  &nbsp;&nbsp;
-  <img src="https://img.icons8.com/fluency/48/new-post.png" width="42" height="42" alt="Email" title="Email link pending" />
+  <a href="mailto:hfyym4@nottingham.edu.my" title="hfyym4@nottingham.edu.my">
+    <img src="https://img.icons8.com/fluency/48/new-post.png" width="42" height="42" alt="Email" />
+  </a>
 </p>
-
-<!-- Send ChatGPT your exact LinkedIn URL and contact email to activate the two icons above. -->
 
 <div align="center">
   <sub><code>BUILDING WORLDS FOR INTELLIGENT MACHINES</code></sub>
