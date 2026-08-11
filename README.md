@@ -1,56 +1,82 @@
-# Hello, I'm Jimmy 👋
+<div align="center">
+  <img src="./assets/banner.svg" width="100%" alt="Ma Yixing — Embodied AI, Humanoid Robotics and 3D Environments">
+</div>
 
-I'm a Computer Science (AI) student at the University of Nottingham,
-working primarily on Embodied AI, Humanoid Robotics and Machine Learning.
+<img src="./assets/divider.svg" width="100%" alt="">
 
-My current work focuses on building scalable, simulation-ready 3D
-environments for humanoid robot training.
+## <samp>WHO</samp>
 
-## 🚀 My Work
+Computer Science (AI) student at the **University of Nottingham**, working primarily on **Embodied AI, Humanoid Robotics, 3D scene generation, and machine learning**.
 
-### 🤖 Humanoid Training Scene Generation
+My current focus is building **scalable, simulation-ready 3D environments for humanoid robot training** — especially the hard parts between a generated scene and a scene that is actually usable: geometry QA, collision validity, multi-floor connectivity, navigation structure, rendering, and automated evaluation.
 
-My current research explores automatic generation, connection and
-validation of large-scale indoor environments for humanoid training.
+## <samp>IN FLIGHT</samp>
 
-- [Humanoid-Training-Scene-Ready-Generation](...)
-- [SceneSmith](...)
+```text
+NOW        multi-floor scene construction for humanoid training
+BUILDING   simulation-ready 3D environment generation pipelines
+TESTING    collision geometry · connectivity · scene quality gates
+LEARNING   robot learning · reinforcement learning · scientific ML
+OPEN TO    research collaborations · robotics / AI internships
+```
 
-Current problems I'm working on include:
+## <samp>CURRENT SYSTEM</samp>
 
-- multi-floor scene construction
-- physically valid floor/stair connections
-- collision and navigation geometry
-- automatic scene quality evaluation
-- large-scale environment generation
+### 🤖 Humanoid Training Scene-Ready Generation
 
-## 🔬 Research
+My main research engineering project is an automation and evaluation layer for generating robust indoor training environments for robots and humanoids.
 
-### Embodied AI / Robotics
+- [Humanoid-Training-Scene-Ready-Generation](https://github.com/JIMMY081105/Humanoid-Training-Scene-Ready-Generation) — scene QA, collision validation, HPC orchestration, rendering, benchmarking and simulation-ready export.
+- [SceneSmith](https://github.com/JIMMY081105/Scenesmith) — working research fork for scalable indoor scene generation.
 
-Work involving humanoid locomotion environments, simulation,
-3D scene generation and robot training infrastructure.
+```text
+scene generation
+      ↓
+geometry + collision QA
+      ↓
+multi-floor connection
+      ↓
+navigation validation
+      ↓
+simulation-ready export
+```
+
+## <samp>RESEARCH SIGNALS</samp>
+
+### Embodied AI / Humanoid Robotics
+
+I am interested in the interface between **intelligent agents and physically grounded environments**: how robots perceive, navigate, and learn inside complex spaces rather than isolated benchmark rooms.
 
 ### Scientific Machine Learning
 
-- [Scientific Machine Learning — Peking Module](...)
-
-Numerical optimization, automatic differentiation, neural networks
-and scientific computing using Julia.
+- [Scientific Machine Learning — Peking Module](https://github.com/JIMMY081105/Scientific-Machine-Learning-Peking-Module) — numerical optimization, automatic differentiation, neural networks, differential equations and Julia-based scientific computing.
 
 ### Multi-Agent Systems
 
-Research and experiments involving intelligent-agent systems
-and coordination.
+Research interest in coordination, planning and intelligent-agent systems.
 
-## 💻 Selected Projects
+## <samp>SELECTED BUILDS</samp>
 
-- Humanoid Training Scene Generation
-- SceneSmith
-- Scientific Machine Learning
-- Intrusion Detection System
-- Car Warehouse Management System
+| Project | Focus |
+|---|---|
+| [Humanoid Training Scene-Ready Generation](https://github.com/JIMMY081105/Humanoid-Training-Scene-Ready-Generation) | Robotics environments · 3D generation · validation |
+| [SceneSmith](https://github.com/JIMMY081105/Scenesmith) | Indoor scene generation · embodied AI |
+| [Scientific Machine Learning — Peking Module](https://github.com/JIMMY081105/Scientific-Machine-Learning-Peking-Module) | Julia · optimization · scientific ML |
+| [Intrusion Detection System](https://github.com/JIMMY081105/Intrusion-Detection-System-IDS-) | Machine learning · cybersecurity |
+| [Car Warehouse Management System](https://github.com/JIMMY081105/Car-Warehouse-Management-System-using-C-) | C++ · software engineering |
 
-## 📫 Get in Touch
+## <samp>INSTRUMENTS</samp>
 
-GitHub: @JIMMY081105
+```text
+LANGUAGES      Python · C++ · Julia · Java
+ML / AI        PyTorch · reinforcement learning · scientific ML
+ROBOTICS       embodied AI · simulation · scene generation
+3D / SYSTEMS   Blender · geometry pipelines · Linux · HPC / SLURM
+WORKBENCH      Git · GitHub · automation · research tooling
+```
+
+<img src="./assets/divider.svg" width="100%" alt="">
+
+<p align="center">
+  <samp>building worlds for intelligent machines</samp>
+</p>
