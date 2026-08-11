@@ -16,39 +16,24 @@ I work mainly on **Embodied AI, Humanoid Robotics, 3D scene generation, and mach
 - [SceneSmith](https://github.com/JIMMY081105/Scenesmith)
 - [Scientific-Machine-Learning-Peking-Module](https://github.com/JIMMY081105/Scientific-Machine-Learning-Peking-Module)
 
-<img src="./assets/divider.svg" width="100%" alt="">
+<br>
 
 ## Languages
 
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="46" height="46" alt="Java" title="Java" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="46" height="46" alt="JavaScript" title="JavaScript" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="46" height="46" alt="Python" title="Python" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" width="46" height="46" alt="C" title="C" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" width="46" height="46" alt="C++" title="C++" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/julia/julia-original.svg" width="46" height="46" alt="Julia" title="Julia" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="46" height="46" alt="HTML5" title="HTML5" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="46" height="46" alt="CSS3" title="CSS3" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" width="46" height="46" alt="PHP" title="PHP" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="46" height="46" alt="SQL / PostgreSQL" title="SQL / PostgreSQL" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" width="46" height="46" alt="Shell / Bash" title="Shell / Bash" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" width="46" height="46" alt="Markdown" title="Markdown" />
-</p>
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=java,js,python,c,cpp,julia,html,css,php,postgres,bash,md&theme=dark&perline=12" alt="Java, JavaScript, Python, C, C++, Julia, HTML, CSS, PHP, PostgreSQL, Bash, Markdown" />
+</div>
 
-<img src="./assets/divider.svg" width="100%" alt="">
+<br>
 
 ## Connect with me
 
-<p align="left">
-  <a href="https://github.com/JIMMY081105" title="GitHub">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="42" height="42" alt="GitHub" />
+<p align="center">
+  <a href="https://github.com/JIMMY081105">
+    <img src="https://img.shields.io/badge/GitHub-JIMMY081105-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
-  &nbsp;&nbsp;
-  <a href="mailto:hfyym4@nottingham.edu.my" title="hfyym4@nottingham.edu.my">
-    <img src="https://img.icons8.com/fluency/48/new-post.png" width="42" height="42" alt="Email" />
+  &nbsp;
+  <a href="mailto:hfyym4@nottingham.edu.my">
+    <img src="https://img.shields.io/badge/Email-hfyym4%40nottingham.edu.my-FF4FD8?style=for-the-badge&logoColor=white" alt="Email" />
   </a>
 </p>
-
-<div align="center">
-  <sub><code>BUILDING WORLDS FOR INTELLIGENT MACHINES</code></sub>
-</div>
