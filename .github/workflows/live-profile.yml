@@ -1,0 +1,72 @@
+name: Live profile
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # daily, 03:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update_profile.py"
+      - ".github/workflows/live-profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-profile
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Stats cards and recent list
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_profile.py dist
+
+      - name: Contribution snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Check generated files
+        run: |
+          for f in stats-dark.svg stats-light.svg github-snake.svg github-snake-dark.svg; do
+            test -s "dist/$f" || { echo "missing or empty: dist/$f"; exit 1; }
+            grep -q "<svg" "dist/$f" || { echo "not an SVG: dist/$f"; exit 1; }
+          done
+
+      - name: Publish to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: false
+          jekyll: false
+          commit_message: "Refresh live profile assets"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit the recent-activity list if it changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "README unchanged"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "Refresh recently active repositories"
+            git push
+          fi
