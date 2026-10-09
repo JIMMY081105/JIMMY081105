@@ -145,7 +145,7 @@ def recent_block(d: dict) -> str:
         if len(desc) > 110:
             desc = desc[:108].rsplit(" ", 1)[0].rstrip(" ,;:—-") + "…"
         desc = f" — {desc}" if desc else ""
-        rows.append(f"- [**{r['name']}**]({r['html_url']}){desc} <sub>· pushed {r['pushed_at'][:10]}</sub>")
+        rows.append(f"- `{r['pushed_at'][:10]}` [**{r['name']}**]({r['html_url']}){desc}")
     return "\n".join(rows)
 
 

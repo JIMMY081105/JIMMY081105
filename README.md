@@ -6,6 +6,8 @@
   <a href="https://github.com/JIMMY081105/Buildings-Generation"><img src="https://img.shields.io/badge/featured-Buildings--Generation-0d1117?style=flat-square&logo=github&logoColor=white" alt="Featured: Buildings-Generation"></a>
   <img src="https://img.shields.io/badge/focus-Embodied%20AI%20%C2%B7%20Humanoid%20Robotics-5fe0ff?style=flat-square&labelColor=0d1117" alt="Focus: Embodied AI and humanoid robotics">
   <a href="mailto:hfyym4@nottingham.edu.my"><img src="https://img.shields.io/badge/email-hfyym4%40nottingham.edu.my-ff5fd8?style=flat-square&labelColor=0d1117" alt="Email"></a>
+  <a href="https://orcid.org/0009-0008-7246-7431"><img src="https://img.shields.io/badge/ORCID-0009--0008--7246--7431-A6CE39?style=flat-square&logo=orcid&logoColor=white&labelColor=0d1117" alt="ORCID"></a>
+  <a href="https://scholar.google.com/citations?user=JTJBx_sAAAAJ&hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-profile-4285F4?style=flat-square&logo=googlescholar&logoColor=white&labelColor=0d1117" alt="Google Scholar"></a>
 </p>
 
 ## About
@@ -35,7 +37,7 @@ acceptance gates that are built to fail.
 
 <table>
   <tr>
-    <td align="center" width="33%"><img src="./assets/media/stair_straight.jpg" alt="Straight staircase"><br><sub>straight</sub></td>
+    <td align="center" width="33%"><img src="./assets/media/stair_eyelevel_approach.jpg" alt="Eye-level approach to a generated staircase"><br><sub>eye-level approach</sub></td>
     <td align="center" width="33%"><img src="./assets/media/stair_l_shaped.jpg" alt="L-shaped staircase"><br><sub>L-shaped</sub></td>
     <td align="center" width="33%"><img src="./assets/media/stair_u_shaped.jpg" alt="U-shaped staircase"><br><sub>U-shaped</sub></td>
   </tr>
@@ -97,11 +99,11 @@ upstream files ship as reviewable diffs.
 **Recently active**
 
 <!-- LIVE:RECENT:START -->
-- [**Buildings-Generation**](https://github.com/JIMMY081105/Buildings-Generation) — Generate, connect and accept multi-storey simulation-ready buildings of any type — geometric storey… <sub>· pushed 2026-10-08</sub>
-- [**Grand-Library**](https://github.com/JIMMY081105/Grand-Library) <sub>· pushed 2026-09-14</sub>
-- [**Scientific-Machine-Learning-Peking-Module**](https://github.com/JIMMY081105/Scientific-Machine-Learning-Peking-Module) — Julia-based scientific machine learning course materials from Peking University: lecture notes, notebooks… <sub>· pushed 2026-07-23</sub>
-- [**Sustainability-Theory-and-Practices**](https://github.com/JIMMY081105/Sustainability-Theory-and-Practices) — The module is about understanding complex sustainability problems and developing practical, evidence-based… <sub>· pushed 2026-07-21</sub>
-- [**Humanoid-Training-Scene-Ready-Generation**](https://github.com/JIMMY081105/Humanoid-Training-Scene-Ready-Generation) <sub>· pushed 2026-07-15</sub>
+- `2026-10-08` [**Buildings-Generation**](https://github.com/JIMMY081105/Buildings-Generation) — Generate, connect and accept multi-storey simulation-ready buildings of any type — geometric storey…
+- `2026-09-14` [**Grand-Library**](https://github.com/JIMMY081105/Grand-Library)
+- `2026-07-23` [**Scientific-Machine-Learning-Peking-Module**](https://github.com/JIMMY081105/Scientific-Machine-Learning-Peking-Module) — Julia-based scientific machine learning course materials from Peking University: lecture notes, notebooks…
+- `2026-07-21` [**Sustainability-Theory-and-Practices**](https://github.com/JIMMY081105/Sustainability-Theory-and-Practices) — The module is about understanding complex sustainability problems and developing practical, evidence-based…
+- `2026-07-15` [**Humanoid-Training-Scene-Ready-Generation**](https://github.com/JIMMY081105/Humanoid-Training-Scene-Ready-Generation)
 <!-- LIVE:RECENT:END -->
 
 <p align="center"><sub>Header is a hand-built animated SVG (<code>scripts/build_hero.py</code>).
