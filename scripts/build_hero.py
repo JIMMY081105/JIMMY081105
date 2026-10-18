@@ -13,9 +13,9 @@ SANS = "'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-se
 
 PHRASES = [
     "building simulation-ready multi-storey worlds",
-    "designing stairs a humanoid can actually climb",
+    "connecting storeys with generated staircases",
     "acceptance gates that are built to fail",
-    "training humanoid policies in physics simulation",
+    "validating geometry for physics simulation",
 ]
 TYPE_X, TYPE_Y, TYPE_SIZE = 84, 250, 20
 CHAR_W = TYPE_SIZE * 0.6  # monospace advance
@@ -111,33 +111,6 @@ def voxels() -> str:
     return "".join(cells)
 
 
-def humanoid() -> str:
-    """Stick humanoid walking up the flight. Origin = feet."""
-    cycle = 10.0
-    path = [  # (t, x, y)
-        (0.0, 690, G_Y), (1.6, S_X0 - 6, G_Y), (6.4, S_X1, F2_Y),
-        (8.2, 1092, F2_Y), (10.0, 1092, F2_Y),
-    ]
-    kt = ";".join(f"{t / cycle:.3f}" for t, _, _ in path)
-    vals = ";".join(f"{x} {y}" for _, x, y in path)
-    return f"""
-  <g>
-    <animateTransform attributeName="transform" type="translate" dur="{cycle}s" repeatCount="indefinite"
-                      keyTimes="{kt}" values="{vals}"/>
-    <animate attributeName="opacity" dur="{cycle}s" repeatCount="indefinite"
-             keyTimes="0;0.06;0.8;0.88;1" values="0;1;1;0;0"/>
-    <g class="bob"><g transform="scale(.82)" class="figure">
-      <ellipse cx="0" cy="0" rx="16" ry="3" fill="#000" opacity=".35"/>
-      <g class="leg legA"><line x1="0" y1="-44" x2="0" y2="-2" class="limb"/></g>
-      <g class="leg legB"><line x1="0" y1="-44" x2="0" y2="-2" class="limb"/></g>
-      <line x1="0" y1="-44" x2="1" y2="-80" class="limb torso"/>
-      <g class="arm armA"><line x1="1" y1="-76" x2="1" y2="-50" class="limb thin"/></g>
-      <g class="arm armB"><line x1="1" y1="-76" x2="1" y2="-50" class="limb thin"/></g>
-      <circle cx="2" cy="-89" r="7.5" class="head"/>
-    </g></g>
-  </g>"""
-
-
 def pipeline() -> str:
     labels = ["scan storeys", "connect stairs", "voxel bake", "accept"]
     x, y = 56, 318
@@ -160,8 +133,8 @@ def pipeline() -> str:
 
 def build() -> str:
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img"
-     aria-label="Ma Yixing (Jimmy) — Embodied AI, humanoid robotics and simulation-ready 3D scene generation">
-  <title>Ma Yixing (Jimmy) — Embodied AI · Humanoid Robotics · 3D Scene Generation</title>
+     aria-label="Ma Yixing (Jimmy) — Embodied AI and simulation-ready 3D scene generation">
+  <title>Ma Yixing (Jimmy) — Embodied AI · 3D Scene Generation · Physics Simulation</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#060a17"/><stop offset=".55" stop-color="#0a1330"/><stop offset="1" stop-color="#130b26"/>
@@ -208,27 +181,11 @@ def build() -> str:
     .lab     {{ font: 500 11.5px {MONO}; fill: #8fb0d8; }}
     .labk    {{ font: 600 11.5px {MONO}; fill: #ff8fe4; }}
     .hud     {{ fill: #0b1530; stroke: #2a4a7a; stroke-width: 1; }}
-    .limb    {{ stroke: #3d8bff; stroke-width: 6.5; stroke-linecap: round; }}
-    .limb.thin {{ stroke-width: 5; }}
-    .torso   {{ stroke-width: 8.5; }}
-    .head    {{ fill: #3d8bff; }}
-    .figure  {{ filter: drop-shadow(0 0 6px rgba(61,139,255,.55)); }}
-    .leg, .arm {{ transform-box: view-box; }}
-    .leg     {{ transform-origin: 0 -44px; }}
-    .arm     {{ transform-origin: 1px -76px; }}
-    .legA    {{ animation: swing .7s ease-in-out infinite alternate; }}
-    .legB    {{ animation: swing .7s ease-in-out infinite alternate-reverse; }}
-    .armA    {{ animation: swingS .7s ease-in-out infinite alternate-reverse; }}
-    .armB    {{ animation: swingS .7s ease-in-out infinite alternate; }}
-    .bob     {{ animation: bob .35s ease-in-out infinite alternate; }}
     .gridg   {{ animation: drift 14s linear infinite; }}
     @keyframes blink   {{ 0%,50% {{ opacity: 1; }} 50.01%,100% {{ opacity: 0; }} }}
     @keyframes breathe {{ 0%,100% {{ opacity: .45; transform: scale(.8); }} 50% {{ opacity: 1; transform: scale(1.15); }} }}
     @keyframes vox     {{ 0% {{ opacity: .12; }} 2% {{ opacity: 1; }} 14% {{ opacity: .38; }} 100% {{ opacity: .12; }} }}
     @keyframes scan    {{ 0% {{ transform: translateX(0); }} 100% {{ transform: translateX({GX1 - GX0 + 40}px); }} }}
-    @keyframes swing   {{ from {{ transform: rotate(-24deg); }} to {{ transform: rotate(24deg); }} }}
-    @keyframes swingS  {{ from {{ transform: rotate(-18deg); }} to {{ transform: rotate(18deg); }} }}
-    @keyframes bob     {{ from {{ transform: translateY(0); }} to {{ transform: translateY(-2.5px); }} }}
     @keyframes drift   {{ from {{ transform: translate(0,0); }} to {{ transform: translate(28px,28px); }} }}
     @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; }} }}
   </style>
@@ -239,7 +196,7 @@ def build() -> str:
     <rect width="{W}" height="{H}" fill="url(#glow)"/>
 
     <!-- left: identity -->
-    <text x="56" y="76" class="eyebrow">EMBODIED AI · HUMANOID ROBOTICS · 3D SCENE GENERATION</text>
+    <text x="56" y="76" class="eyebrow">EMBODIED AI · 3D SCENE GENERATION · PHYSICS SIMULATION</text>
     <text x="54" y="146" class="name">Ma Yixing</text>
     <text x="56" y="184" class="sub">Jimmy  ·  Computer Science with AI  ·  University of Nottingham</text>
     <text x="56" y="{TYPE_Y}" class="prompt">&gt;</text>
@@ -247,7 +204,7 @@ def build() -> str:
     <line x1="56" y1="280" x2="600" y2="280" stroke="#1f2d52" stroke-width="1"/>
     {pipeline()}
     <circle cx="62" cy="372" r="5" class="dot"/>
-    <text x="76" y="376" class="status">research focus: humanoid locomotion in generated buildings</text>
+    <text x="76" y="376" class="status">research focus: procedural scenes and geometry validation</text>
 
     <!-- right: two-storey cross-section -->
     <g>
@@ -270,7 +227,6 @@ def build() -> str:
       <rect x="{GX0 + 14}" y="{ROOF_Y + 16}" width="252" height="54" rx="8" class="hud"/>
       <text x="{GX0 + 28}" y="{ROOF_Y + 38}" class="labk">STANDABILITY CHECK</text>
       <text x="{GX0 + 28}" y="{ROOF_Y + 58}" class="lab">r 0.25 m · h 1.60 m · step 0.20 m</text>
-      {humanoid()}
     </g>
   </g>
   <rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="18" fill="none" stroke="#1d2a4d"/>

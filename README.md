@@ -1,10 +1,10 @@
 <div align="center">
-  <img src="./assets/hero.svg" width="100%" alt="Ma Yixing (Jimmy) — Embodied AI, humanoid robotics and simulation-ready 3D scene generation">
+  <img src="./assets/hero.svg" width="100%" alt="Ma Yixing (Jimmy) — Embodied AI and simulation-ready 3D scene generation">
 </div>
 
 <p align="center">
   <a href="https://github.com/JIMMY081105/Buildings-Generation"><img src="https://img.shields.io/badge/featured-Buildings--Generation-0d1117?style=flat-square&logo=github&logoColor=white" alt="Featured: Buildings-Generation"></a>
-  <img src="https://img.shields.io/badge/focus-Embodied%20AI%20%C2%B7%20Humanoid%20Robotics-5fe0ff?style=flat-square&labelColor=0d1117" alt="Focus: Embodied AI and humanoid robotics">
+  <img src="https://img.shields.io/badge/focus-Embodied%20AI%20%C2%B7%203D%20Scene%20Generation-5fe0ff?style=flat-square&labelColor=0d1117" alt="Focus: Embodied AI and 3D scene generation">
   <a href="mailto:hfyym4@nottingham.edu.my"><img src="https://img.shields.io/badge/email-hfyym4%40nottingham.edu.my-ff5fd8?style=flat-square&labelColor=0d1117" alt="Email"></a>
   <a href="https://orcid.org/0009-0008-7246-7431"><img src="https://img.shields.io/badge/ORCID-0009--0008--7246--7431-A6CE39?style=flat-square&logo=orcid&logoColor=white&labelColor=0d1117" alt="ORCID"></a>
   <a href="https://scholar.google.com/citations?user=JTJBx_sAAAAJ&hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-profile-4285F4?style=flat-square&logo=googlescholar&logoColor=white&labelColor=0d1117" alt="Google Scholar"></a>
@@ -13,27 +13,20 @@
 ## About
 
 I'm **Ma Yixing (Jimmy)**, a Computer Science with AI student at the **University of Nottingham**.
-I build **simulation-ready 3D environments for humanoid robots**: multi-storey buildings whose storeys,
-stairs and colliders are checked to be walkable *before* a policy ever trains in them.
+I build **simulation-ready 3D environments**: multi-storey buildings whose storeys,
+stairs and colliders are checked for walkability and connectivity before use in physics simulation.
 
-- **Research interests:** embodied AI, humanoid locomotion, procedural 3D scene generation, physics simulation
+- **Research interests:** embodied AI, procedural 3D scene generation, geometry validation, physics simulation
 - **How I work:** every acceptance check ships with a negative control. If a gate cannot fail, it is not measuring anything.
-- **Currently:** connecting generated buildings to humanoid motion training in ProtoMotions / PARC
+- **Currently:** improving multi-storey building generation, staircase connectivity and geometric acceptance gates
 
 ## Featured research
 
 ### [Buildings-Generation](https://github.com/JIMMY081105/Buildings-Generation)
 
-Turn a multi-storey building into one a simulated humanoid can actually walk through: find its storeys,
-design and place a staircase that connects them, bake the result to a voxel cache, and run geometric
-acceptance gates that are built to fail.
-
-<p align="center">
-  <img src="./assets/media/stair_ascent.gif" width="720" alt="A humanoid policy climbing a flight designed, placed and accepted by Buildings-Generation">
-  <br>
-  <sub>A humanoid policy climbing a flight this pipeline designed, placed, baked and accepted.
-  Geometry from Buildings-Generation; policy trained separately in ProtoMotions / PARC.</sub>
-</p>
+Prepare multi-storey buildings for physics simulation: find their storeys, design and place
+staircases that connect them, bake the result to a voxel cache, and run geometric acceptance
+gates that are built to fail.
 
 <table>
   <tr>
@@ -80,7 +73,6 @@ upstream files ship as reviewable diffs.
   <img src="https://skillicons.dev/icons?i=pytorch,blender,linux,git,githubactions,react,vite,tailwind&theme=dark" alt="PyTorch, Blender, Linux, Git, GitHub Actions, React, Vite, Tailwind CSS"><br><br>
   <img src="https://img.shields.io/badge/NVIDIA-Isaac%20Sim%20%C2%B7%20Isaac%20Gym-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="NVIDIA Isaac Sim and Isaac Gym">
   <img src="https://img.shields.io/badge/OpenUSD-scene%20description-5fe0ff?style=flat-square&labelColor=0d1117" alt="OpenUSD">
-  <img src="https://img.shields.io/badge/ProtoMotions%20%2F%20PARC-humanoid%20RL-ff5fd8?style=flat-square&labelColor=0d1117" alt="ProtoMotions and PARC">
   <img src="https://img.shields.io/badge/SLURM-HPC%20clusters-8b949e?style=flat-square&labelColor=0d1117" alt="SLURM">
 </p>
 
