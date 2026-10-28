@@ -1,7 +1,6 @@
 """Refresh the live parts of the profile from the GitHub API.
 
 Writes  <out_dir>/stats-dark.svg and <out_dir>/stats-light.svg
-Updates the block between the LIVE:RECENT markers in README.md.
 
 Run:  python scripts/update_profile.py dist
 Env:  GITHUB_TOKEN (optional, raises the API rate limit), PROFILE_USER.
@@ -11,7 +10,6 @@ notebook outputs inflate byte counts and would hide everything else.
 
 import json
 import os
-import re
 import sys
 import urllib.request
 from datetime import datetime, timezone
@@ -19,7 +17,6 @@ from html import escape
 from pathlib import Path
 
 USER = os.environ.get("PROFILE_USER", "JIMMY081105")
-ROOT = Path(__file__).resolve().parent.parent
 EXCLUDED_LANGS = {"Jupyter Notebook"}
 LANG_COLORS = {
     "Python": "#3572A5", "C++": "#f34b7d", "C": "#555555", "Java": "#b07219",
@@ -138,29 +135,6 @@ def stats_svg(d: dict, theme: str) -> str:
 """
 
 
-def recent_block(d: dict) -> str:
-    rows = []
-    for r in d["recent"]:
-        desc = (r["description"] or "").strip()
-        if len(desc) > 110:
-            desc = desc[:108].rsplit(" ", 1)[0].rstrip(" ,;:—-") + "…"
-        desc = f" — {desc}" if desc else ""
-        rows.append(f"- `{r['pushed_at'][:10]}` [**{r['name']}**]({r['html_url']}){desc}")
-    return "\n".join(rows)
-
-
-def update_readme(d: dict) -> bool:
-    path = ROOT / "README.md"
-    text = path.read_text(encoding="utf-8")
-    pattern = re.compile(r"(<!-- LIVE:RECENT:START -->).*?(<!-- LIVE:RECENT:END -->)", re.S)
-    if not pattern.search(text):
-        raise SystemExit("README.md is missing the LIVE:RECENT markers")
-    new = pattern.sub(lambda m: f"{m.group(1)}\n{recent_block(d)}\n{m.group(2)}", text)
-    if new != text:
-        path.write_text(new, encoding="utf-8")
-    return new != text
-
-
 def main() -> None:
     out_dir = Path(sys.argv[1] if len(sys.argv) > 1 else "dist")
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -169,9 +143,8 @@ def main() -> None:
         raise SystemExit("GitHub API returned no repositories; refusing to publish an empty card")
     for theme in THEMES:
         (out_dir / f"stats-{theme}.svg").write_text(stats_svg(d, theme), encoding="utf-8")
-    changed = update_readme(d)
     print(f"repos={d['public_repos']} stars={d['stars']} followers={d['followers']} "
-          f"langs={len(d['langs'])} readme_changed={changed}")
+          f"langs={len(d['langs'])}")
 
 
 if __name__ == "__main__":

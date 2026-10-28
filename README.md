@@ -36,21 +36,3 @@ stairs and colliders are checked for walkability and connectivity before use in 
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JIMMY081105/JIMMY081105/output/stats-dark.svg">
   <img src="https://raw.githubusercontent.com/JIMMY081105/JIMMY081105/output/stats-light.svg" width="100%" alt="GitHub stats: public repositories, stars, followers and languages">
 </picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JIMMY081105/JIMMY081105/output/github-snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/JIMMY081105/JIMMY081105/output/github-snake.svg" width="100%" alt="Contribution graph being eaten by a snake">
-</picture>
-
-**Recently active**
-
-<!-- LIVE:RECENT:START -->
-- `2026-10-23` [**Research-Agent-Orchestrator**](https://github.com/JIMMY081105/Research-Agent-Orchestrator) — A local multi-agent orchestration system integrating OpenAI Codex and Claude Code for autonomous research…
-- `2026-10-17` [**Buildings-Generation**](https://github.com/JIMMY081105/Buildings-Generation) — Generate, connect and accept multi-storey simulation-ready buildings of any type — geometric storey…
-- `2026-09-14` [**Grand-Library**](https://github.com/JIMMY081105/Grand-Library)
-- `2026-07-23` [**Scientific-Machine-Learning-Peking-Module**](https://github.com/JIMMY081105/Scientific-Machine-Learning-Peking-Module) — Julia-based scientific machine learning course materials from Peking University: lecture notes, notebooks…
-- `2026-07-21` [**Sustainability-Theory-and-Practices**](https://github.com/JIMMY081105/Sustainability-Theory-and-Practices) — The module is about understanding complex sustainability problems and developing practical, evidence-based…
-<!-- LIVE:RECENT:END -->
-
-<p align="center"><sub>Header is a hand-built animated SVG (<code>scripts/build_hero.py</code>).
-Stats, the contribution snake and the recent list refresh daily via GitHub Actions.</sub></p>
