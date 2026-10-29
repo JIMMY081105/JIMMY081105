@@ -36,16 +36,3 @@ stairs and colliders are checked for walkability and connectivity before use in 
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JIMMY081105/JIMMY081105/output/stats-dark.svg">
   <img src="https://raw.githubusercontent.com/JIMMY081105/JIMMY081105/output/stats-light.svg" width="100%" alt="GitHub stats: public repositories, stars, followers and languages">
 </picture>
-
-## 2026, in blocks
-
-My contribution-calendar snapshot · **1 January–28 October 2026**
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/contrib3d/calendar-dark.svg">
-  <img src="./assets/contrib3d/calendar-light.svg" width="100%" alt="JIMMY081105 contribution calendar, 1 January–28 October 2026: 2,582 contributions across 301 observed days, including 267 active days. One block per day, with logarithmic height.">
-</picture>
-
-**2,582 contributions · 267 active days / 301 observed days**
-
-<sub>One block per day, with logarithmic height. Static snapshot generated with [GitHub Profile 3D Contrib](https://github.com/yoshi389111/github-profile-3d-contrib). [Credits and licences](./assets/contrib3d/NOTICE.md).</sub>
