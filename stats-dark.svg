@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="210" viewBox="0 0 860 210" role="img"
+     aria-label="GitHub stats for JIMMY081105: 17 public repos, 54 stars, 10 followers">
+  <title>GitHub stats — JIMMY081105</title>
+  <style>
+    .title { font: 600 17px 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; fill: #e6edf3; }
+    .num   { font: 700 34px 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; fill: #5fe0ff; }
+    .lab   { font: 400 13px 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; fill: #9aa7b8; }
+    .leg   { font: 500 13px 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; fill: #e6edf3; }
+    .pct   { fill: #9aa7b8; font-weight: 400; }
+    .foot  { font: 400 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #9aa7b8; }
+    .live  { fill: #ff5fd8; animation: pulse 2s ease-in-out infinite; }
+    .fade  { opacity: 0; animation: fade .6s ease-out forwards; }
+    .grow  { transform-box: fill-box; transform-origin: left; transform: scaleX(0);
+              animation: grow .9s cubic-bezier(.2,.7,.2,1) forwards; }
+    @keyframes fade  { to { opacity: 1; } }
+    @keyframes grow  { to { transform: scaleX(1); } }
+    @keyframes pulse { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .fade, .grow { animation: none; opacity: 1; transform: none; } .live { animation: none; } }
+  </style>
+  <rect x=".5" y=".5" width="859" height="209" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <text x="32" y="42" class="title">GitHub at a glance</text>
+  <text x="400" y="42" class="title">Languages <tspan class="lab">· own public repos, by bytes, excl. notebooks</tspan></text>
+  <g class="fade" style="animation-delay:0.00s"><text x="32" y="104" class="num">17</text><text x="32" y="128" class="lab">Public repos</text></g><g class="fade" style="animation-delay:0.15s"><text x="150" y="104" class="num">54</text><text x="150" y="128" class="lab">Stars</text></g><g class="fade" style="animation-delay:0.30s"><text x="268" y="104" class="num">10</text><text x="268" y="128" class="lab">Followers</text></g>
+  <rect x="400" y="74" width="428" height="10" rx="5" fill="#21262d"/>
+  <g><rect x="400.0" y="74" width="351.0" height="10" fill="#3572A5" class="grow" style="animation-delay:0.00s"/><rect x="751.0" y="74" width="34.0" height="10" fill="#f34b7d" class="grow" style="animation-delay:0.08s"/><rect x="785.1" y="74" width="13.8" height="10" fill="#89e051" class="grow" style="animation-delay:0.16s"/><rect x="798.9" y="74" width="9.4" height="10" fill="#a270ba" class="grow" style="animation-delay:0.24s"/><rect x="808.3" y="74" width="7.7" height="10" fill="#b07219" class="grow" style="animation-delay:0.32s"/><rect x="815.9" y="74" width="4.6" height="10" fill="#3178c6" class="grow" style="animation-delay:0.40s"/><rect x="820.6" y="74" width="7.4" height="10" fill="#8b949e" class="grow" style="animation-delay:0.48s"/></g>
+  <circle cx="405" cy="106" r="5" fill="#3572A5"/><text x="416" y="110" class="leg">Python <tspan class="pct">82.0%</tspan></text><circle cx="550" cy="106" r="5" fill="#f34b7d"/><text x="561" y="110" class="leg">C++ <tspan class="pct">8.0%</tspan></text><circle cx="695" cy="106" r="5" fill="#89e051"/><text x="706" y="110" class="leg">Shell <tspan class="pct">3.2%</tspan></text><circle cx="405" cy="130" r="5" fill="#a270ba"/><text x="416" y="134" class="leg">Julia <tspan class="pct">2.2%</tspan></text><circle cx="550" cy="130" r="5" fill="#b07219"/><text x="561" y="134" class="leg">Java <tspan class="pct">1.8%</tspan></text><circle cx="695" cy="130" r="5" fill="#3178c6"/><text x="706" y="134" class="leg">TypeScript <tspan class="pct">1.1%</tspan></text><circle cx="405" cy="154" r="5" fill="#8b949e"/><text x="416" y="158" class="leg">Other <tspan class="pct">1.7%</tspan></text>
+  <line x1="32" y1="166" x2="828" y2="166" stroke="#30363d"/>
+  <circle cx="38" cy="187" r="4" class="live"/>
+  <text x="50" y="191" class="foot">latest push: Research-Agent-Orchestrator · 2026-10-28</text>
+  <text x="828" y="191" class="foot" text-anchor="end">refreshed 2026-10-31 09:37 UTC</text>
+</svg>
